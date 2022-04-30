@@ -1,0 +1,147 @@
+:host {
+  display: flex;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.app-layout {
+  height: 100vh;
+}
+
+.menu-sidebar {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  background-color: #252C3E;
+}
+
+.header-trigger {
+  height: 64px;
+  padding: 20px 24px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all .3s, padding 0s;
+}
+
+.trigger:hover {
+  color: #1890ff;
+}
+
+.sidebar-logo {
+  position: relative;
+  height: 60px;
+  padding-left: 12px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #252C3E;
+  transition: all .3s;
+}
+
+.sidebar-bottom {
+  position: absolute;
+  height: 60px;
+  padding-left: 12px;
+  bottom: 0;
+  overflow: hidden;
+  line-height: 64px;
+  background: #252C3E;
+  transition: all .3s;
+}
+
+nz-header {
+  padding: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.app-header {
+  position: relative;
+  height: 64px;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+.inner-content {
+  background: #fff;
+  height: 100%;
+}
+
+.icon-logo {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 4px rgba(23, 23, 37, 0.1);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+}
+
+.icon-active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 4px rgba(23, 23, 37, 0.1);
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+}
+
+.icon-header {
+  color: black;
+  background: rgba(255, 255, 255, 0.4);
+  box-shadow: 0px 1px 4px rgba(23, 23, 37, 0.1);
+  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  padding: 4px;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+}
+
+.icoins {
+  padding: 6px;
+  color: #fff;
+}
+
+.sider {
+  padding-left: 12px;
+  list-style-type: none;
+}
+
+.sider>li {
+  margin-top: 23px;
+}
+
+.button-menu {
+  background: #fff;
+  border: none;
+}
+
+.drop-menu {
+  padding-top: 50%;
+}
+
+.right-header {
+  display: flex;
+  line-height: initial;
+}
+
+.input-header {
+  width: 248px;
+  height: 36px;
+  border: 1px solid #EFEFEF;
+  box-sizing: border-box;
+  border-radius: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px;
+  margin-right: 28px;
+}
+.button-right-menu{
+  width: 30px;
+  height: 30px;
+}

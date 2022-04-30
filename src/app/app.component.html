@@ -1,0 +1,68 @@
+<nz-layout class="app-layout">
+  <nz-sider class="menu-sidebar" nzCollapsible nzWidth="60px" nzBreakpoint="md" nzCollapsed="false" [nzTrigger]="null">
+    <div class="sidebar-logo">
+      <mat-icon class="icoins icon-logo">arrow_forward_ios</mat-icon>
+    </div>
+    <ul class="sider" nzMode="vertical">
+      <li>
+        <mat-icon class="icoins icon-active">home</mat-icon>
+      </li>
+      <li>
+        <mat-icon class="icoins">rotate_left</mat-icon>
+      </li>
+      <li>
+        <mat-icon class="icoins">group</mat-icon>
+      </li>
+    </ul>
+    <div class="sidebar-bottom">
+      <mat-icon class="icoins icon-logo">settings</mat-icon>
+    </div>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <div class="app-header">
+        <img src="../assets/Header/MobileFoneIT_logo02 1.png" />
+        <div>
+          <button mat-button class="button-menu" [matMenuTriggerFor]="onemenu">Quản lý<span class="drop-menu">
+              <mat-icon>arrow_drop_down</mat-icon>
+            </span></button>
+          <mat-menu #onemenu="matMenu" xPosition="before">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          <button mat-button class="button-menu" [matMenuTriggerFor]="twomenu">Báo cáo<span class="drop-menu">
+              <mat-icon>arrow_drop_down</mat-icon>
+            </span></button>
+          <mat-menu #twomenu="matMenu" xPosition="before">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+          <button mat-button class="button-menu" [matMenuTriggerFor]="beforeMenu">Tài liệu<span class="drop-menu">
+              <mat-icon>arrow_drop_down</mat-icon>
+            </span></button>
+          <mat-menu #beforeMenu="matMenu" xPosition="before">
+            <button mat-menu-item>Item 1</button>
+            <button mat-menu-item>Item 2</button>
+          </mat-menu>
+        </div>
+        <div class="right-header">
+          <input matInput placeholder="Search" class="input-header">
+          <div>
+            <img src="../assets/Header/Frame 5.png" />
+          </div>
+          <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon class="button-right-menu">message</mat-icon>
+          </button>
+          <button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+            <mat-icon class="mat-icon notranslate material-icons mat-icon-no-color button-right-menu" role="img" aria-hidden="true">notifications</mat-icon>
+          </button>
+        </div>
+      </div>
+    </nz-header>
+    <nz-content>
+      <div class="inner-content">
+        <router-outlet></router-outlet>
+      </div>
+    </nz-content>
+  </nz-layout>
+</nz-layout>
